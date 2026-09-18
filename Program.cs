@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿for (int i = 1; i <= 100; i++)
+{
+    Console.WriteLine($"Enemy wave {i} has started");
+    Console.WriteLine($"Enemy wave {i} is cleared\n");
+}
