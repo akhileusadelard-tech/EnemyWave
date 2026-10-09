@@ -1,13 +1,22 @@
 ﻿Console.WriteLine("Hello, World!");
 
-string secretCode = "26";
+string secretCode = "1992";
 string attempt = "";
 
-while(attempt != secretCode)
+int tries =3;
+
+while(attempt != secretCode && tries > 0)
 {
+    tries--;
     Console.WriteLine("Enter The Secret Code : ");
     attempt = Console.ReadLine();
     if(attempt!= secretCode)
-    Console.WriteLine("kamu salah");
+    {
+        Console.WriteLine("Wrong code! Try again...");
+        Console.WriteLine($"\n{tries}.attempt(s).remaining");
+    }
+    else
+    {
+        Console.WriteLine("The door is unlocked!");
+    }
 }
-Console.WriteLine("sangar cyak arek tepak");
